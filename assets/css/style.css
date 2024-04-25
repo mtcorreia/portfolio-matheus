@@ -11,7 +11,6 @@
   --raw-seinna: hsl(24, 74%, 58%);
   --sizzling-sunrise: hsl(51, 95%, 54%);
   --scarlet: hsl(13, 96%, 47%);
-  --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
 
   /**
@@ -1110,14 +1109,13 @@ textarea.input-field {
   }
 
   .me-content {
-    --color-primary: var(--white);
-
+    color: black;
     position: absolute;
     top: 50%;
     filter: drop-shadow(2px 4px 10px var(--black));
   }
 
-  .me .btn-primary:is(:hover, :focus) { color: hsl(0, 0%, 12%); }
+  .me .btn-primary:is(:hover, :focus) { color: hsl(--bg-primary); }
 
   .me-social-list {
     display: block;
@@ -1133,7 +1131,7 @@ textarea.input-field {
     left: 13px;
     width: 2px;
     height: 30px;
-    background: var(--color-secondary);
+    background: var(--white);
   }
 
   .me-social-link {
